@@ -84,10 +84,8 @@ class ConsumerComplaints(object):
         Sorts a dictionary by the product and year keys
         """
         try:
-            ##changes made here#
             for product in self.aggdict:
                 self.aggdict[product] = OrderedDict(sorted(self.aggdict[product].items())) #Sorts inner dictionary by year
-            ##changes end here
             self.sorteddict = OrderedDict(sorted(self.aggdict.items())) #Sorts dictionary by product
         except Exception as e:
             pass
