@@ -101,7 +101,7 @@ class ConsumerComplaints(object):
         for product in self.sorteddict:
             for year in self.sorteddict[product]:
                 try:
-                    product_reformat = (lambda product:'"' + product + '"' if "," in product else product)(product) #Adds double quotation marks to a product name containing comma
+                    product_reformat = (lambda product:'"' + product.strip('"') + '"' if "," in product else product.strip('"'))(product) #Adds double quotation marks to a product name containing comma
                     key_list = [product_reformat,int(year)]
                     answer_list = [items for items in self.sorteddict[product][year].values()]
                     concat_list = key_list + answer_list
