@@ -12,7 +12,7 @@ class ConsumerComplaints(object):
         """
         Initializes object of a class
         :param input_file: a csv file that contains the consumer complaints data
-        :param output_file: a csv file with four ouput columns including product, year, total
+        :param output_file: a csv file with five ouput columns including product, year, total
         complaints, total companies that received complaints, and the highest percentage of
         complaints filed towards one company
         """
