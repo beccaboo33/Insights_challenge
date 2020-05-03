@@ -15,6 +15,16 @@ Each line in the output file lists the following fields in the following order:
 * total number of companies receiving at least one complaint for that product and year
 * highest percentage (rounded to the nearest whole number) of total complaints filed against one company for that product and year. Use standard rounding conventions (i.e., Any percentage between 0.5% and 1%, inclusive, should round to 1% and anything less than 0.5% should round to 0%)
 
+## Prerequisite
+This program requires the following libraries: 
+`sys`
+`csv`
+`collections`
+
+## How to run
+Place input file `complaints.csv` in `./input` and run `./src/consumer_complaints.py` with `python3`
+
+
 ## Repo directory structure
 The top-level directory structure for your repo should look like the following: (So that we can grade your submission, replicate this directory structure at the top-most level of your project repository. Do not place the structure in a subdirectory)
 
