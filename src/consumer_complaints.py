@@ -32,7 +32,7 @@ class ConsumerComplaints(object):
         """
         with open(self.inputfile) as csvfile:
             read_csv = csv.reader(csvfile, delimiter = ',')
-            next(read_csv)
+            next(read_csv) #Skip header row
             for row in read_csv:
                 try:
                     year = row[0][0:4] #Keeps the first four digits in date_created column
